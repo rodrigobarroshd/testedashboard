@@ -10,7 +10,7 @@ function Header() {
     const state = useContext(GlobalState)
     const [isLogged] = state.userAPI.isLogged
     const [isAdmin] = state.userAPI.isAdmin
-    const [cart] = state.userAPI.cart
+    
     const [menu, setMenu] = useState(false)
 
     const logoutUser = async () =>{

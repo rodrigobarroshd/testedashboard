@@ -59,9 +59,9 @@ function CreateProduct() {
             formData.append('file', file)
 
             setLoading(true)
-            const res = await axios.post('/api/upload', formData, {
-                headers: {'content-type': 'multipart/form-data', Authorization: token}
-            })
+            // const res = await axios.post('/api/upload', formData, {
+            //     headers: {'content-type': 'multipart/form-data', Authorization: token}
+            // })
             setLoading(false)
            
 
