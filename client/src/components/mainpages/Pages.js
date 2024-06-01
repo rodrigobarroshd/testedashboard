@@ -6,7 +6,7 @@ import Login from './auth/Login'
 import Register from './auth/Register'
 import OrderHistory from './history/OrderHistory'
 import OrderDetails from './history/OrderDetails'
-import Cart from './cart/Cart'
+
 import NotFound from './utils/not_found/NotFound'
 import Categories from './categories/Categories'
 import CreateProduct from './createProduct/CreateProduct'
@@ -35,7 +35,6 @@ function Pages() {
             <Route path="/history" exact component={isLogged ? OrderHistory : NotFound} />
             <Route path="/history/:id" exact component={isLogged ? OrderDetails : NotFound} />
 
-            <Route path="/cart" exact component={Cart} />
 
 
             <Route path="*" exact component={NotFound} />
